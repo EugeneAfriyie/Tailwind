@@ -45,13 +45,13 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-28 bg-primary bg-hero bg-cover bg-center   sm:min-h-[50px]"  >
+      <div className=" relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-28 bg-primary bg-hero bg-cover bg-center sm:min-h-[50px]"  >
 
         <img src={bigshoe}
          alt="shoe-collection"
          width={610}
          height={400}
-        className=' object-contain relative z-10    '
+        className=' object-contain relative z-10  '
          
          />
 
