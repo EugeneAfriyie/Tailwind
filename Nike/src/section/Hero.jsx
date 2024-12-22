@@ -5,8 +5,12 @@ import { shoes, statistics } from '../Constants'
 import { bigShoe1 } from '../assets/images'
 import ShoeCard from '../Components/ShoeCard'
 
+import { useState } from 'react'
+
 
 const Hero = () => {
+
+  const [bigshoe, setBigshoe] = useState(bigShoe1)
   return (
    <section id='home'
     className='w-full  flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'>
@@ -41,20 +45,20 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-10 bg-primary bg-hero bg-cover bg-center" >
+      <div className=" relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-28 bg-primary bg-hero bg-cover bg-center   sm:min-h-[50px]"  >
 
-        <img src={bigShoe1}
+        <img src={bigshoe}
          alt="shoe-collection"
          width={610}
-         height={500}
-        className=' object-contain relative z-10 '
+         height={400}
+        className=' object-contain relative z-10    '
          
          />
 
-         <div className="">
+         <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left[10%] max-sm:px-6 ">
           {shoes.map((shoe,index) => (
-            <div className="" key={shoe}>
-              <ShoeCard/>
+            <div className="" key={index}>
+              <ShoeCard imgUrl={shoe} changeShoeImg={(shoe)=>{setBigshoe(shoe.bigShoe)}} bigshoeimg={bigshoe}/>
             </div>
           ))}
          </div>
