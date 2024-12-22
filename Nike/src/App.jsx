@@ -1,13 +1,50 @@
-export default function App() {
-  return (
-   <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-      
-    <p className="text-xl w-20 border border-blue-900"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse reprehenderit nesciunt quo eveniet earum iste sit iure dolorum commodi placeat!
-      </p>      
-  </>
+import React from 'react'
 
+const App = () => {
+  return (
+    <>
+    <main className="relative">
+      nav 
+
+      <section className="xl:padding-1 wide:padding-r padding-b">
+        
+
+
+        <section className="padding">
+          Pupular Products
+        </section>
+
+        <section className="padding">
+         SuperQuality
+        </section>
+
+        <section className="padding-x py-10">
+          Services
+        </section>
+
+        <section className="padding">
+          Special Products
+        </section>
+
+        <section className="padding bg-pale-blue">
+          Customer Reviews
+        </section>
+
+        <section className="padding-x sm:py-32 py-16 w-full">
+          Sunscribe
+        </section>
+
+        <section className="padding bg-black padding-x padding-t pb-8">
+         Footer
+        </section>
+
+      </section>
+    </main>
+    
+    
+    
+    </>
   )
 }
+
+export default App
