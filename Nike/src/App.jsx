@@ -1,3 +1,4 @@
+import Nav from "./Components/Nav"
 import CustomerReviews from "./section/CustomerReviews"
 import Footer from "./section/Footer"
 import Hero from "./section/Hero"
@@ -11,6 +12,8 @@ const App = () => {
   return (
     <>
     <main className="relative">
+
+      <Nav/>
 
 
 
