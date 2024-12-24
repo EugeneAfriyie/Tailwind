@@ -5,7 +5,7 @@ import { hamburger } from '../assets/icons';
 
 const Nav = () => {
   return (
-    <header className="padding-x py-8 absolute z-10 w-full border border-gray-700">
+    <header className="padding-x py-8 absolute z-10 w-full  border-gray-700">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="Logo" width={130} height={20} />
