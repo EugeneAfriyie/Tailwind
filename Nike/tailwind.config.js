@@ -37,7 +37,21 @@ export default {
       },
       screens: {
         "wide": "1440px"
-      }
+      },   animation: {
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'slide-up': 'slideUp 0.5s ease-out forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(50px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },// <-- Missing a closing brace for the "extend" object
+      }, // <-- Add a comma here to properly close "keyframes"
+    
     },
   },
   plugins: [],
