@@ -1,4 +1,6 @@
 import React from 'react'
+import { navLinks } from '../Constants'
+import { headerLogo } from '../assets/images'
 
 const Modal = ({setmenuClicked,menuClicked}) => {
   return (
@@ -17,9 +19,9 @@ const Modal = ({setmenuClicked,menuClicked}) => {
     
           {navLinks.map(({href,label}) => (
     
-            <li className=" border-gray-900 w-full p-2 hover:bg-red-400 hover:text-white px-4 rounded-xl  text-slate-gray ">
-              <a href={href} className="font-montserrat text-2xl    ">{label}</a>
-            </li>
+            <a key={label } href={href} className=" border-gray-900 w-full p-2 hover:bg-red-400 hover:text-white px-4 rounded-xl  text-slate-gray ">
+              <p  className="font-montserrat text-2xl    ">{label}</p>
+            </a>
           ))}
       
           </ul>

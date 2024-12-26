@@ -29,7 +29,7 @@ const Nav = ({menuClicked,setmenuClicked}) => {
           
         </ul>
 
-        <div className="max-lg:block hidden" onClick={handleClick} >
+        <div className=" " onClick={handleClick} >
           <img src={hamburger} alt="" width={25} height={25}  />
         </div>
       </nav>
