@@ -14,4 +14,4 @@ const Button = ({label,iconUrl,backgroundColor,borderColor,textColor,Fullwidth})
   )
 }
 
-export default Button
+export default Button;
