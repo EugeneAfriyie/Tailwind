@@ -26,4 +26,4 @@ const ReviewCard = ({imgURL,feedback,customerName,rating}) => {
   )
 }
 
-export default ReviewCard;
+export default ReviewCard
